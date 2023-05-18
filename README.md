@@ -206,7 +206,7 @@ If you would like to include a citation for **YT** in your work, please cite the
  year = {2022},
  month = {07},
  title = {Developing Optimal Causal Cyber-Defence Agents via Cyber Security Simulation},
- maintitle = {International Confernece on Machine Learning (ICML)},
+ maintitle = {International Conference on Machine Learning (ICML)},
  booktitle = {Workshop on Machine Learning for Cybersecurity (ML4Cyber)}
 }
 ```
