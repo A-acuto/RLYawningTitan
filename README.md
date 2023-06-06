@@ -1,14 +1,15 @@
-![Python](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
-![GitHub](https://img.shields.io/github/license/dstl/YAWNING-TITAN)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dstl/YAWNING-TITAN/Python%20package)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dstl/YAWNING-TITAN/build-sphinx-to-github-pages?label=docs)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/dstl/YAWNING-TITAN)
-![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/dstl/YAWNING-TITAN/latest)
-![GitHub issue custom search](https://img.shields.io/github/issues-search?label=active%20bug%20issues&query=repo%3Adstl%2FYAWNING-TITAN%20is%3Aopen%20label%3Abug)
-![GitHub issue custom search](https://img.shields.io/github/issues-search?label=active%20feature%20requests&query=repo%3Adstl%2FYAWNING-TITAN%20is%3Aopen%20label%3Afeature_request)
-![GitHub Discussions](https://img.shields.io/github/discussions/dstl/YAWNING-TITAN)
+# Reinforcement Learning algorithms in YAWNING-TITAN
+Python implementation of project exploring reinforcement algorithms using YAWNING TITAN for network cyber defence.
+## Abstract
+The increasing number of network simulators have opened opportunities to explore and apply state-of-the-art algorithms to understand and measure the capabilities of such techniques in numerous sectors. On this regard, the recently released Yawning Titan is one example of a simplistic, but not less detailed, representation of a cyber network scenario where it is possible to train agents guided by reinforcement learning algorithms and measure their effectiveness in trying to stop an infection. In this paper, we explore how different reinforcement learning algorithms lead the training of various agents in different example and realistic networks.We asses how we can deploy such agents in a set of networks, focusing in particular on the resilience of the agents in exploring networks with complex starting states, increased number of routes connecting the nodes and different level of challenge
 
-# Reinforcement Learning in YAWNING-TITAN
+# add hee link at the image plot
+
+# Project structure
+- Networks: directory containing the examples networks to run this example
+- logs_dir
+- paper_plots: directory containing plots from the paper.
+- yawning_titan: YAWNING TITAN modified version to run this example, this is based on the V-0.1.1 release.
 
 
 ## About The Project
@@ -49,6 +50,10 @@ or install `tensorflow` as an optional dependency by postfixing the command in s
 ```bash
 python3 -m pip install -e .[tensorflow]
 ```
+
+## Authors
+[Alberto Acuto](https://www.linkedin.com/in/albeacu/), [Simon Maskell](http://www.simonmaskell.com/) &
+
 ## Cite This Work
 
 If you would like to include a citation for **YT** in your work, please cite the paper published at the ICML 2022 ML4Cyber Workshop.
