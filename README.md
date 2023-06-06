@@ -7,7 +7,7 @@ We employed YAWNING-TITAN (**YT**), an abstract, graph based cyber-security simu
 ## Abstract
 The increasing number of network simulators have opened opportunities to explore and apply state-of-the-art algorithms to understand and measure the capabilities of such techniques in numerous sectors. On this regard, the recently released Yawning Titan is one example of a simplistic, but not less detailed, representation of a cyber network scenario where it is possible to train agents guided by reinforcement learning algorithms and measure their effectiveness in trying to stop an infection. In this paper, we explore how different reinforcement learning algorithms lead the training of various agents in different example and realistic networks.We asses how we can deploy such agents in a set of networks, focusing in particular on the resilience of the agents in exploring networks with complex starting states, increased number of routes connecting the nodes and different level of challenge
 
-![alt text]<img src="https://github.com/A-acuto/RLYawningTitan/blob/main/figures/exploration_RL_models_nodes_updates_paper_fix.png" width=90% heigth=90%>
+<img src="https://github.com/A-acuto/RLYawningTitan/blob/main/figures/exploration_RL_models_nodes_updates_paper_fix.png" width=60% heigth=60%>
 
 # Project structure
 - Networks: directory containing the examples networks to run this example
