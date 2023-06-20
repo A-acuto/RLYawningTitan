@@ -1,11 +1,23 @@
-# Reinforcement Learning algorithms in YAWNING-TITAN
+# Defending the unknown: Exploring reinforcement learning agents’ deployment in realistic, unseen networks
 Python implementation of project exploring reinforcement algorithms using YAWNING TITAN for network cyber defence.
 
 ## About The Project
-We employed YAWNING-TITAN (**YT**), an abstract, graph based cyber-security simulation environment to train intelligent agents for autonomous cyber operations. We have use model-free reinforcement learning algorithms from [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) for training and deploying in a set of different networks with increased complexity, status change and challenge. 
+We employed YAWNING-TITAN (**YT**), an abstract, graph based cyber-security simulation environment to train intelligent agents for autonomous cyber operations. We have use model-free reinforcement learning algorithms from [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) for training and deploying in a set of different networks with increased complexity, status change and challenge. The main focus lies in the deployment of realistic agents in unseen networks. 
 
 ## Abstract
-The increasing number of network simulators have opened opportunities to explore and apply state-of-the-art algorithms to understand and measure the capabilities of such techniques in numerous sectors. On this regard, the recently released Yawning Titan is one example of a simplistic, but not less detailed, representation of a cyber network scenario where it is possible to train agents guided by reinforcement learning algorithms and measure their effectiveness in trying to stop an infection. In this paper, we explore how different reinforcement learning algorithms lead the training of various agents in different example and realistic networks.We asses how we can deploy such agents in a set of networks, focusing in particular on the resilience of the agents in exploring networks with complex starting states, increased number of routes connecting the nodes and different level of challenge
+The increasing number of network simulators has opened opportuni-
+ties to explore and apply state-of-the-art algorithms to understand and measure
+the capabilities of such techniques in numerous sectors. In this regard, the re-
+cently released Yawning Titan is one example of a simplistic, but not less detailed,
+representation of a cyber network scenario where it is possible to train agents
+guided by reinforcement learning algorithms and measure their effectiveness in
+trying to stop an infection. In this paper, we explore how different reinforcement
+learning algorithms lead the training of various agents in different examples and
+realistic networks. We assess how we can deploy such agents in a set of networks,
+focusing in particular on the resilience of the agents in exploring networks with
+complex starting states, increased number of routes connecting the nodes and
+different levels of challenge, aiming to evaluate the deployment performances in
+realistic networks never seen before.
 
 <img src="https://github.com/A-acuto/RLYawningTitan/blob/main/figures/exploration_RL_models_nodes_updates_paper_fix.png" width=60% heigth=60%>
 
