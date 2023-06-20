@@ -27,11 +27,6 @@ realistic networks never seen before.
 - paper_plots: directory containing plots from the paper.
 - yawning_titan: YAWNING TITAN modified version to run this example, this is based on the V-0.1.1 release.
 
-
-
-#### 3. Install `yawning-titan` into the venv along with all of it's dependencies
-
-
 ## Authors
 [Alberto Acuto](https://www.linkedin.com/in/albeacu/), [Simon Maskell](http://www.simonmaskell.com/) &
 
