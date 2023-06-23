@@ -28,9 +28,9 @@ realistic networks never seen before.
 - yawning_titan: YAWNING TITAN modified version to run this example, this is based on the V-0.1.1 release.
 
 ## Authors
-[Alberto Acuto^1](https://www.linkedin.com/in/albeacu/), [Simon Maskell^1](http://www.simonmaskell.com/) & Jack D.^2
-^1 University of Liverpool, School of Electrical engineering, electronics and computer science
-^2 Alan Turing Institute
+[Alberto Acuto](https://www.linkedin.com/in/albeacu/)(1), [Simon Maskell](http://www.simonmaskell.com/)(1) & Jack D. (2)  
+(1) University of Liverpool, School of Electrical engineering, electronics and computer science  
+(2) Alan Turing Institute  
 
 ## Cite This Work
 If you would like to cite this work please use this:
