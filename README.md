@@ -1,5 +1,5 @@
 # Defending the unknown: Exploring reinforcement learning agents’ deployment in realistic, unseen networks
-Python implementation of project exploring reinforcement algorithms using YAWNING TITAN for network cyber defence.
+Python implementation of project exploring reinforcement algorithms using YAWNING TITAN software for network cyber defence.
 
 ## About The Project
 We employed YAWNING-TITAN (**YT**), an abstract, graph based cyber-security simulation environment to train intelligent agents for autonomous cyber operations. We have use model-free reinforcement learning algorithms from [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) for training and deploying in a set of different networks with increased complexity, status change and challenge. The main focus lies in the deployment of realistic agents in unseen networks. 
@@ -28,7 +28,9 @@ realistic networks never seen before.
 - yawning_titan: YAWNING TITAN modified version to run this example, this is based on the V-0.1.1 release.
 
 ## Authors
-[Alberto Acuto](https://www.linkedin.com/in/albeacu/), [Simon Maskell](http://www.simonmaskell.com/) &
+[Alberto Acuto^1](https://www.linkedin.com/in/albeacu/), [Simon Maskell^1](http://www.simonmaskell.com/) & Jack D.^2
+^1 University of Liverpool, School of Electrical engineering, electronics and computer science
+^2 Alan Turing Institute
 
 ## Cite This Work
 If you would like to cite this work please use this:
