@@ -8,10 +8,19 @@ import matplotlib.pyplot as plt
 import glob
 from scipy.ndimage import uniform_filter1d
 import sys
-
+import os
+# Load the function to generate networks, or load pkl files
 import generate_test_networks as gnt
 
-plt.style.use('./plots/figure_style.mplstyle')
+# Staging
+current_dir = os.getcwd()
+
+output_dir = os.path.join(current_dir, 'networks')
+logs_dir = os.path.join(current_dir, 'logs_dir')
+plot_dir = os.path.join(current_dir, 'figures')
+
+# Load the figure style, this is optional
+plt.style.use(os.path.join(plot_dir, 'figure_style.mplstyle'))
 
 def plot_training_performance(data, xlabel:str, ylabel:str):
     """
@@ -20,25 +29,25 @@ def plot_training_performance(data, xlabel:str, ylabel:str):
     """
 
 
+def plot_evaluations():
+    """
+        Function to plot the performances of the models and the random agent
+    :return:
+    """
+    return ()
+
 
 def main():
-    #create_network(50, 0.4, output_dir=outdir, filename='test', save=True)
 
-    outdir = './networks'
-    gnt.create_network(50, 0.4, output_dir='./networks', filename='test', save=False)
+    # load the path models
+    models_names = ['PPO', 'A2C', 'DQN']
+    models_paths = [os.path.join(current_dir, imodel) for imodel in models_names]
 
-    data = gnt.load(outdir+'/' + 'test')
-
-    print(data)
+    print(models_paths)
 
     sys.exit()
 
-
-    models = ['\PPO', '\A2C', '\DQN']
-    lbs = ['PPO', 'A2C', 'DQN']
-
     files =['\PPO_std_100*','\A2C_std_100*', '\DQN_std_100*']
-    log_dir = r'.\logs_dir'
 
     print(log_dir + models[0])
     monitors = []
@@ -69,7 +78,6 @@ def main():
     #plt.show()
     plt.savefig('plots/no_hyper_pars_tuning_100_nodes.png', dpi=150)
     plt.savefig('plots/no_hyper_pars_tuning_100_nodes.pdf', dpi=150)
-
 
 
 if __name__ == '__main__':

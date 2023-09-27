@@ -10,10 +10,15 @@ The increasing number of network simulators has opened opportunities to explore 
 <img src="https://github.com/A-acuto/RLYawningTitan/blob/main/figures/exploration_RL_models_nodes_updates_paper_fix.png" width=60% heigth=60%>
 
 # Project structure
-- Networks: directory containing the examples networks to run this example
-- logs_dir
-- paper_plots: directory containing plots from the paper.
+- Networks: directory containing the examples networks to run the codes present in the repository;
+- logs_dir: directory containing the trained models, information about the training performances;
+- figures: directory containing plots from the paper/poster;
+- utils : directory containing general codes needed to run the examples and deal with the models and Yawning Titan;
 - yawning_titan: YAWNING TITAN modified version to run this example, this is based on the V-0.1.1 release.
+
+Codes:
+- train_agents.py : code that simulates the training procedure, from generating (or loading) the networks to setting the RL algorithms to train and save them;
+
 
 ## Authors
 [Alberto Acuto](https://www.linkedin.com/in/albeacu/)<sup>1</sup>, [Simon Maskell](http://www.simonmaskell.com/)<sup>1</sup> & Jack D. <sup>2</sup>  

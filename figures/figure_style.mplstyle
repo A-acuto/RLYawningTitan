@@ -1,0 +1,9 @@
+axes.labelsize : 10
+axes.linewidth : 2.0
+xtick.labelsize : 12
+ytick.labelsize : 12
+font.family : serif
+font.weight : light
+axes.grid : True
+figure.dpi : 150
+legend.shadow : False
