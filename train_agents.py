@@ -89,7 +89,8 @@ for isize in standard_example:
 
         agent = agents[ialgorithm]
         policies = policies[ialgorithm]
-        model_dir = os.path.join(dir_agent[ialgorithm], names[ialgorithm])
+        model_dir = os.path.join(dir_agent[ialgorithm], algorithms[ialgorithm])
+        model_name = os.path.join(model_dir, model_names[i]+f'_{isize}')
 
         print(f'Starting the agent using {algorithms[ialgorithm]} algorithm')
 
@@ -117,7 +118,7 @@ for isize in standard_example:
         env.reset()
 
         # setup the monitor to check the training
-        env = Monitor(env, model_dir)
+        env = Monitor(env, model_name)
 
         # define callback to stop the training
         stop_train_callback = StopTrainingOnNoModelImprovement(max_no_improvement_evals=3, min_evals=5, verbose=1)
@@ -135,11 +136,11 @@ for isize in standard_example:
             chosen_agent = agent(policies, env, verbose=1, buffer_size=10000, normalize_advantage=True)
         else:
             chosen_agent = agent(policies, env, verbose=1, normalize_advantage=True)
-            
+
         # Train the agent
         _ = chosen_agent.learn(total_timesteps=timesteps, callback=eval_callback)
         # save the trained-converged model
-        chosen_agent.save(model_dir)
+        chosen_agent.save(model_name)
 
 
 

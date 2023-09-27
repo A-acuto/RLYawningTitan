@@ -41,9 +41,17 @@ def main():
 
     # load the path models
     models_names = ['PPO', 'A2C', 'DQN']
-    models_paths = [os.path.join(current_dir, imodel) for imodel in models_names]
+    models_paths = [os.path.join(logs_dir, imodel) for imodel in models_names]
+    network_size = [18, 50, 100]
 
-    print(models_paths)
+    for isize in network_size:
+        for index_algo in range(len(models_paths)):
+            print(models_paths[index_algo] + f'\*{isize}.monitor.csv')
+            x = glob.glob(models_paths[0] + f'\*{isize}*.monitor.csv')
+            print(x)
+    # process the monitors
+    monitors = []
+
 
     sys.exit()
 
