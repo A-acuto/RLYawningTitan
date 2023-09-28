@@ -59,6 +59,38 @@ def default_game_mode_tests_rnd_path(random_value: int) -> Path:
         )
     )
 
+def default_game_mode_low_red_skills_rnd_path(random_value: int) -> Path:
+    """
+    Return the path.
+
+    Returns: The path to the default_game_mode.yaml as an instance of
+        pathlib.Path.
+    """
+    return pathlib.Path(
+        os.path.join(
+            _LIB_CONFIG_ROOT_PATH,
+            "_package_data",
+            "game_modes",
+            "default_game_mode_red_skill015_rnd_"+str(random_value)+".yaml",
+        )
+    )
+
+def default_game_mode_high_red_skills_rnd_path(random_value: int) -> Path:
+    """
+    Return the path.
+
+    Returns: The path to the default_game_mode.yaml as an instance of
+        pathlib.Path.
+    """
+    return pathlib.Path(
+        os.path.join(
+            _LIB_CONFIG_ROOT_PATH,
+            "_package_data",
+            "game_modes",
+            "default_game_mode_red_skill075_rnd_"+str(random_value)+".yaml",
+        )
+    )
+
 
 def default_game_mode_low_actions_path() -> Path:
     """

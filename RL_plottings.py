@@ -5,10 +5,15 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import glob
+import matplotlib.gridspec as gridspec
+
 from scipy.ndimage import uniform_filter1d
+
+import glob
+import re
 import sys
 import os
+
 # Load the function to generate networks, or load pkl files
 import generate_test_networks as gnt
 
@@ -30,8 +35,21 @@ def plot_training_performance(data, xlabel:str, ylabel:str,
                               plot_mean:bool = True,
                               save_plot:bool = False):
     """
-        Function to plot the performances from the monitoring of the environment
-    :return:
+        Function to plot the performances from the Stable baselines monitors
+
+        This function creates figures of the mean rewards over timesteps
+        calculated from the environment monitor provided by Stable Baselines
+
+    :parameter:
+        data : list containing the dataframes composing the rewards over timesteps
+        xlabel : xlabel of the plot
+        ylabel : ylabel of the plot
+        title : title of the plot
+        model_names : names of the algorithms, used for titles and objects in the plot
+        plot_name : final name of the figure
+        colors : list of colors
+        plot_mean : toggle to add the running mean of the measurements to the plot
+        save_plot : toggle to show or save the figure.
     """
 
     # check if the list is not empty

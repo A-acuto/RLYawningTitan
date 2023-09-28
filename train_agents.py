@@ -62,27 +62,33 @@ model_names = ['PPO_std', 'A2C_std', 'DQN_std']  # for this example we can show 
 # get the network network nodes
 standard_example = [18, 50, 100]  # if you want to test the "unseen" networks use 22/55/60
 
+# entry nodes
+network_entry = [['3', '5', '10'],  # 18
+           ['3', '10', '15', '25', '34', '45', '7'],  # 50
+           ['4', '10', '20', '30', '40', '55', '76', '78', '12', '88', '90']]  # 100
+
 # loop over the network size
-for isize in standard_example:
+for index, isize in enumerate(standard_example):
     network_load = glob.glob(os.path.join(network_dir, f'synthetic_{isize}*.npz'))
-    print(network_load)
 
     if len(network_load) == 1:
-        matrix, positions = np.load(network_load[0], allow_pickle=True)
+        network_files = np.load(network_load[0], allow_pickle=True)
+        matrix = network_files['matrix']
+        positions = dict(np.ndenumerate(network_files['connections']))[()]  # convert the positions nd array to dict
     else:
         if isize == 18:
             matrix, positions = network_creator.create_18_node_network()
         else:
             matrix, positions = gtn.create_network(
                 n_nodes=isize,
-                connectivity=0.4,  # standard connectivity
+                connectivity=0.6,  # standard connectivity
                 output_dir=network_dir,
                 filename=f'synthetic_{isize}',
                 save_matrix=True,
                 save_graph=False)
 
     # need to load the various networks
-    network = NetworkConfig.create_from_args(matrix=matrix, positions=positions, entry_nodes=entry_nodes)
+    network = NetworkConfig.create_from_args(matrix=matrix, positions=positions, entry_nodes=network_entry[index])
 
     # Loop over the algorithms
     for ialgorithm in range(len(algorithms)):

@@ -35,9 +35,9 @@ for itype in model_pars:
             else:
                 lookUp_data = models_paths[index_algo] + \
                               f'\\{models_names[index_algo]}_{isize}_nodes_{itype}.monitor.csv'
-            x = glob.glob(lookUp_data)[0]
+            data = glob.glob(lookUp_data)[0]
             # append everything into a list
-            monitor_data.append(pd.read_csv(x, skiprows=2, names=['Reward', 'Lenght', 'Time']))
+            monitor_data.append(pd.read_csv(data, skiprows=2, names=['Reward', 'Lenght', 'Time']))
 
         plot_training_performance(monitor_data, xlabel='Sampled timesteps',
                                   ylabel='Rewards',
