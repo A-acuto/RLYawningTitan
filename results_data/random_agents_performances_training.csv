@@ -1,7 +1,7 @@
 ﻿Agent,mean,stddev,size,mod
-Random,-1174,681,18,std
-Random,-4155,720,50,std
-Random,-5247,90,100,std
+Random,-1174,681,18,noscenario
+Random,-4155,720,50,noscenario
+Random,-5247,90,100,noscenario
 Random,-726,302,18,isolate
 Random,-4509,492,50,isolate
 Random,-5349,80,100,isolate

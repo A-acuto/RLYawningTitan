@@ -18,8 +18,7 @@ def process_graph_statistics(graph):
 
     # Calculate the clustering
     clust = nx.clustering(graph)
-    print(f'{clust} general clustering')
-    print('---------------------------')
+
     # Calculate the number of clusters
     num_clusters = np.sum([clust[key] for key in clust.keys()])
     print(f'{num_clusters} total number of clusters')
@@ -42,11 +41,14 @@ files = glob.glob(network_dir+ '\*.npz')
 
 # loop over the files
 for ifile in files:
+    nodes = ifile.split('\\')[-1].split('_')[1]
+
     num_triangles,  num_clusters = 0, 0
     matrix = np.load(ifile, allow_pickle=True)['matrix']
 
     df = pd.DataFrame(matrix)
     graph = nx.from_pandas_adjacency(df)
+    print(f'{nodes} nodes network')
     process_graph_statistics(graph)
 
 
