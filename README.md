@@ -11,14 +11,15 @@ The increasing number of network simulators has opened opportunities to explore 
 
 # Project structure
 
-To explore in mode detail what this project comprehends the best way to start is to run the Jupiter Notebook 
+To explore in more detail what this project comprehends the best way to start is to run the Jupiter Notebook 
 [RL_in_Yawning_titan](https://github.com/A-acuto/RLYawningTitan/blob/main/RL_in_Yawning_Titan_notebook.ipynb). 
 This notebooks shows the several steps present in this project, enhancing the data provided with plots showing
 the training performances, the evaluation of the models in a standard scenario and when we explore the 
-agents' resilience by modifying the network. As well as linking codes present in the repository. 
+agents' resilience by modifying the network. Finally, we present how the various agents perform in the zero-shot
+deployment on unseen, realistic networks. This notebook also links all the codes present in the repository. 
 
 Codes:
-- 
+-
 - [train_agents.py](https://github.com/A-acuto/RLYawningTitan/blob/main/train_agents.py) : code that simulates the training procedure, from generating (or loading) the networks to setting the RL algorithms to train and save them;
 - [show_training_performances.py](https://github.com/A-acuto/RLYawningTitan/blob/main/show_training_performances.py) : code to plot the 
 plot the training performances of the various algorithms, using the output of the Monitor files; 
@@ -27,8 +28,12 @@ collecting the rewards obtained in seeded random network to produce statistics o
 - [check_network_statistics.py](https://github.com/A-acuto/RLYawningTitan/blob/main/check_network_statistics.py) : code to check the general network statistics like clustering;
 - [show_agents_deployment_varying_hyperpars.py](https://github.com/A-acuto/RLYawningTitan/blob/main/show_agents_deployment_varying_hyperpars.py) : code to plot the RL algorithms mean scores while changing the hyper-parameters;
 - [show_summary_plot_extensions.py](https://github.com/A-acuto/RLYawningTitan/blob/main/show_summary_plot_extensions.py) : code to plot in a single summary figure the mean performances of the various agents while modifying the network
-with nodes compromised or isolated, performances against a weaker or stronger red agent and on network with fewer of more edges per note.
-
+with nodes compromised or isolated, performances against a weaker or stronger red agent and on network with fewer of more edges per node.
+- [show_deployment_performances.py](https://github.com/A-acuto/RLYawningTitan/blob/main/show_deployment_perfomances.py) : code to plot the results from the deployment on realistic networks and compare the results with the scores obtained
+by a random agent and the same trained RL on the synthetic networks used for training.
+- [RL_plottings.py](https://github.com/A-acuto/RLYawningTitan/blob/main/RL_plottings.py) : code containing the plotting routines used to generate the plots on the project.
+- [RL_utils.py](https://github.com/A-acuto/RLYawningTitan/blob/main/RL_utils.py) : code containing some ad-hoc functions used in the project for data management and handling.
+- 
 Directories:
 - Networks: directory containing the examples networks to run the codes present in the repository;
 - logs_dir: directory containing the trained models, information about the training performances;
