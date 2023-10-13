@@ -24,8 +24,10 @@ Codes:
 plot the training performances of the various algorithms, using the output of the Monitor files; 
 - [evaluate_agents_perfomances.py](https://github.com/A-acuto/RLYawningTitan/blob/main/evaluate_agents_perfomances.py) : code to test the models
 collecting the rewards obtained in seeded random network to produce statistics of the overall performances of the algorithms
-- [show_]()
-
+- [check_network_statistics.py](https://github.com/A-acuto/RLYawningTitan/blob/main/check_network_statistics.py) : code to check the general network statistics like clustering;
+- [show_agents_deployment_varying_hyperpars.py](https://github.com/A-acuto/RLYawningTitan/blob/main/show_agents_deployment_varying_hyperpars.py) : code to plot the RL algorithms mean scores while changing the hyper-parameters;
+- [show_summary_plot_extensions.py](https://github.com/A-acuto/RLYawningTitan/blob/main/show_summary_plot_extensions.py) : code to plot in a single summary figure the mean performances of the various agents while modifying the network
+with nodes compromised or isolated, performances against a weaker or stronger red agent and on network with fewer of more edges per note.
 
 Directories:
 - Networks: directory containing the examples networks to run the codes present in the repository;
