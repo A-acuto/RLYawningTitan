@@ -2,7 +2,7 @@
 Python implementation of project exploring reinforcement algorithms using YAWNING TITAN software for network cyber defence.
 
 ## About The Project
-We employed [YAWNING-TITAN](https://github.com/dstl/YAWNING-TITAN) (**YT**), an abstract, graph based cyber-security simulation environment to train intelligent agents for autonomous cyber operations. We have use model-free reinforcement learning algorithms from [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) for training and deploying in a set of different networks with increased complexity, status change and challenge. The main focus lies in the deployment of realistic agents in unseen networks. This work was presented at [CAMLIS](https://www.camlis.org/) conference in October 2023, this repository is publicly available but the project will not be updated with new development. You can see the poster presented at [CAMLIS here](https://www.researchgate.net/publication/374783421_Defending_the_unknown_Exploring_reinforcement_learning_agents'_deployment_in_realistic_unseen_networks)
+We employed [YAWNING-TITAN](https://github.com/dstl/YAWNING-TITAN) (**YT**), an abstract, graph based cyber-security simulation environment to train intelligent agents for autonomous cyber operations. We have use model-free reinforcement learning algorithms from [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) for training and deploying in a set of different networks with increased complexity, status change and challenge. The main focus lies in the deployment of realistic agents in unseen networks. This work was presented at [CAMLIS](https://www.camlis.org/) conference in October 2023, this repository is publicly available but the project will not be updated with new development. You can see the poster presented at [CAMLIS here](https://www.researchgate.net/publication/374783421_Defending_the_unknown_Exploring_reinforcement_learning_agents'_deployment_in_realistic_unseen_networks) . The paper can be accessed [here](https://scholar.google.com/citations?view_op=view_citation&hl=it&user=x1OW5bUAAAAJ&citation_for_view=x1OW5bUAAAAJ:qjMakFHDy7sC)
 
 ## Abstract
 The increasing number of network simulators has opened opportunities to explore and apply state-of-the-art algorithms to understand and measure the capabilities of such techniques in numerous sectors. In this regard, the recently released Yawning Titan is one example of a simplistic, but not less detailed, representation of a cyber network scenario where it is possible to train agents guided by reinforcement learning algorithms and measure their effectiveness in trying to stop an infection. In this paper, we explore how different reinforcement learning algorithms lead the training of various agents in different examples and realistic networks. We assess how we can deploy such agents in a set of networks, focusing in particular on the resilience of the agents in exploring networks with complex starting states, increased number of routes connecting the nodes and different levels of challenge, aiming to evaluate the deployment performances in realistic networks never seen before.
@@ -64,7 +64,23 @@ If you would like to include a citation for **YT** in your work, please cite the
 }
 ```
 
-And for this specific project, please use this BibTex entry 
+And for this specific project, please use these BibTex entries 
+```bibtex
+@inproceedings{inproceedings,
+ author = {Acuto, Alberto and Maskell, Simon and D.,Jack},
+ year = {2023},
+ month = {10},
+ editor= {Edward Raff and Sagar Samtani and Lauren Deason and Ethan Rudd},
+ title = {Defending the unknown: Exploring reinforcement learning agents’ deployment in realistic, unseen networks},
+ booktitle = {Proceedings of the Conference on Applied Machine Learning in Information Security, {CAMLIS} 2023, Arlington, Virginia, USA, October 19-20, 2023},
+ series = {{CEUR} Workshop Proceedings},
+ volume = {3652},
+ pages = {22--35},
+ publisher = {CEUR-WS.org},
+ year = {2023},
+ url = {https://ceur-ws.org/Vol-3652/paper2.pdf}
+}
+```
 ```bibtex
 @misc{misc,
  author = {Acuto, Alberto and Maskell, Simon and D.,Jack},
