@@ -70,16 +70,15 @@ And for this specific project, please use these BibTex entries
  author = {Acuto, Alberto and Maskell, Simon and D.,Jack},
  year = {2023},
  month = {10},
-editor= {Edward Raff and Sagar Samtani and Lauren Deason and Ethan Rudd}
+ editor= {Edward Raff and Sagar Samtani and Lauren Deason and Ethan Rudd},
  title = {Defending the unknown: Exploring reinforcement learning agents’ deployment in realistic, unseen networks},
- booktitle = {Proceedings of the Conference on Applied Machine Learning in Information
-                  Security, {CAMLIS} 2023, Arlington, Virginia, USA, October 19-20, 2023},
-series = {{CEUR} Workshop Proceedings},
-volume = {3652},
-pages = {22--35},
-publisher = {CEUR-WS.org},
-year = {2023},
-url = {https://ceur-ws.org/Vol-3652/paper2.pdf}
+ booktitle = {Proceedings of the Conference on Applied Machine Learning in Information Security, {CAMLIS} 2023, Arlington, Virginia, USA, October 19-20, 2023},
+ series = {{CEUR} Workshop Proceedings},
+ volume = {3652},
+ pages = {22--35},
+ publisher = {CEUR-WS.org},
+ year = {2023},
+ url = {https://ceur-ws.org/Vol-3652/paper2.pdf}
 }
 ```
 ```bibtex
